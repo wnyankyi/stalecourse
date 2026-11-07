@@ -1,0 +1,12 @@
+name: Build
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  validate-task:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Update cache
+        run: echo "ready"
